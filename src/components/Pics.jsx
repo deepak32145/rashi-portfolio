@@ -6,12 +6,12 @@ import img2 from '../images/WhatsApp Image 2026-03-05 at 13.48.20.jpeg'
 const GALLERY = [
   { id: 1, label: 'Captured Moments', src: img1, span: 'wide' },
   { id: 2, label: 'Captured Moments', src: img2, span: '' },
-  { id: 3, label: 'Travel Diaries', gradient: 'linear-gradient(135deg,#4facfe,#00f2fe)', span: '' },
-  { id: 4, label: 'Campus Life', gradient: 'linear-gradient(135deg,#43e97b,#38f9d7)', span: '' },
-  { id: 5, label: 'Poetry Corner', gradient: 'linear-gradient(135deg,#fa709a,#fee140)', span: '' },
-  { id: 6, label: 'Study Nooks', gradient: 'linear-gradient(135deg,#a18cd1,#fbc2eb)', span: 'tall' },
-  { id: 7, label: 'Everyday Moments', gradient: 'linear-gradient(135deg,#ffecd2,#fcb69f)', span: '' },
-  { id: 8, label: 'Monsoon Mood', gradient: 'linear-gradient(135deg,#a1c4fd,#c2e9fb)', span: '' },
+  { id: 3, label: 'Travel Diaries', src: 'https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&auto=format&fit=crop', span: '' },
+  { id: 4, label: 'Campus Life', src: 'https://images.pexels.com/photos/18408969/pexels-photo-18408969.jpeg?auto=compress&cs=tinysrgb&w=800', span: '' },
+  { id: 5, label: 'Poetry Corner', src: 'https://images.unsplash.com/photo-1455390582262-044cdead277a?w=800&auto=format&fit=crop', span: '' },
+  { id: 6, label: 'Study Nooks', src: 'https://images.unsplash.com/photo-1481627834876-b7833e8f5570?w=800&auto=format&fit=crop', span: 'tall' },
+  { id: 7, label: 'Everyday Moments', src: 'https://images.unsplash.com/photo-1541339907198-e08756dedf3f?w=800&auto=format&fit=crop', span: '' },
+  { id: 8, label: 'Monsoon Mood', src: 'https://images.unsplash.com/photo-1501691223387-dd0500403074?w=800&auto=format&fit=crop', span: '' },
 ]
 
 export default function Pics() {
