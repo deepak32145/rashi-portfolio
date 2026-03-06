@@ -1,12 +1,15 @@
 /* ── Hero ────────────────────────────────────────────────── */
 .hero {
+  --hero-cyan:   #00d4ff;
+  --hero-lime:   #aaff40;
+  --hero-pink:   #ff50b0;
   position: relative;
   min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
   overflow: hidden;
-  background: var(--color-bg);
+  background: #03030d;
 }
 
 .hero__canvas {
@@ -27,7 +30,7 @@
 .hero__glow--1 {
   width: 500px;
   height: 500px;
-  background: radial-gradient(circle, rgba(139, 92, 246, 0.18) 0%, transparent 70%);
+  background: radial-gradient(circle, rgba(0, 212, 255, 0.12) 0%, transparent 70%);
   top: -10%;
   right: 5%;
   animation: glow-drift 8s ease-in-out infinite alternate;
@@ -35,7 +38,7 @@
 .hero__glow--2 {
   width: 400px;
   height: 400px;
-  background: radial-gradient(circle, rgba(59, 130, 246, 0.12) 0%, transparent 70%);
+  background: radial-gradient(circle, rgba(255, 80, 180, 0.10) 0%, transparent 70%);
   bottom: 5%;
   left: -5%;
   animation: glow-drift 10s ease-in-out infinite alternate-reverse;
@@ -62,13 +65,14 @@
 }
 
 .hero__eyebrow {
-  font-size: 0.85rem;
-  font-weight: 600;
-  letter-spacing: 0.2em;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.3em;
   text-transform: uppercase;
-  color: var(--color-accent);
+  color: var(--hero-cyan);
   margin-bottom: 1rem;
   animation: fade-up 0.8s 0.1s ease both;
+  font-family: 'Inter', monospace;
 }
 
 .hero__title {
@@ -76,22 +80,23 @@
   font-size: clamp(3rem, 8vw, 6rem);
   font-weight: 800;
   line-height: 1.05;
-  color: var(--color-text);
+  color: #f0faff;
   margin-bottom: 1.5rem;
   letter-spacing: -0.03em;
   animation: fade-up 0.8s 0.2s ease both;
+  text-shadow: 0 0 60px rgba(0, 212, 255, 0.15);
 }
 
 .hero__title-accent {
-  background: linear-gradient(135deg, var(--color-accent), #3b82f6);
+  background: linear-gradient(135deg, var(--hero-cyan), var(--hero-lime));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
 }
 
 .hero__subtitle {
-  font-size: clamp(1rem, 2vw, 1.2rem);
-  color: var(--color-text-muted);
+  font-size: clamp(1rem, 2vw, 1.15rem);
+  color: rgba(180, 220, 240, 0.7);
   line-height: 1.7;
   max-width: 560px;
   margin: 0 auto 2.5rem;
@@ -122,23 +127,24 @@
 }
 
 .hero__btn--primary {
-  background: var(--color-accent);
-  color: #fff;
-  box-shadow: 0 4px 24px rgba(139, 92, 246, 0.35);
+  background: linear-gradient(135deg, var(--hero-cyan), #0099cc);
+  color: #000;
+  font-weight: 700;
+  box-shadow: 0 4px 28px rgba(0, 212, 255, 0.35);
 }
 .hero__btn--primary:hover {
   transform: translateY(-2px);
-  box-shadow: 0 8px 32px rgba(139, 92, 246, 0.45);
+  box-shadow: 0 8px 36px rgba(0, 212, 255, 0.5);
 }
 
 .hero__btn--ghost {
   background: transparent;
-  color: var(--color-text);
-  border: 1.5px solid rgba(255, 255, 255, 0.15);
+  color: var(--hero-cyan);
+  border: 1.5px solid rgba(0, 212, 255, 0.35);
 }
 .hero__btn--ghost:hover {
-  border-color: var(--color-accent);
-  color: var(--color-accent);
+  border-color: var(--hero-cyan);
+  background: rgba(0, 212, 255, 0.08);
   transform: translateY(-2px);
 }
 
@@ -160,30 +166,32 @@
 .hero__stat-num {
   font-size: 1.75rem;
   font-weight: 800;
-  color: var(--color-text);
+  color: var(--hero-cyan);
   line-height: 1;
 }
 
 .hero__stat-label {
-  font-size: 0.75rem;
-  color: var(--color-text-muted);
+  font-size: 0.72rem;
+  color: rgba(180, 220, 240, 0.55);
   text-transform: uppercase;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.12em;
   margin-top: 0.25rem;
 }
 
 .hero__stat-divider {
   width: 1px;
   height: 40px;
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(0, 212, 255, 0.15);
 }
 
 /* Scroll hint */
 .hero__scroll-hint {
   position: absolute;
   bottom: 2.5rem;
-  left: 50%;
-  transform: translateX(-50%);
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  width: max-content;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -211,7 +219,7 @@
 .hero__scroll-wheel {
   width: 3px;
   height: 8px;
-  background: var(--color-accent);
+  background: var(--hero-cyan);
   border-radius: 2px;
   animation: scroll-wheel 1.5s ease-in-out infinite;
 }

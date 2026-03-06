@@ -13,7 +13,7 @@ const TIMELINE = [
     period: '2023 – 2025',
     role: 'Master of Arts — History',
     company: 'University of Delhi',
-    desc: 'Pursuing MA in History with a focus on modern Indian and world history. Engaged in academic research, dissertation writing, and seminars on historiography and archival methods.',
+    desc: 'Pursued MA in History with a focus on modern Indian and world history. Engaged in academic research, dissertation writing, and seminars on historiography and archival methods.',
     tags: ['Modern History', 'Research', 'Dissertation', 'Historiography'],
   },
   {
